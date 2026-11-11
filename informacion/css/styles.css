@@ -1,0 +1,118 @@
+
+/* contenedor de los cudros de info de los cuadros de los cuadros de los cyuadros de info */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+/* cuadros de info */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 35px;
+    border: 4px solid #002b66;
+}
+
+/* titulos */
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+/* sexodigotexto */
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* lista */
+.form-container ul {
+    padding-left: 25px;
+}
+
+.form-container li {
+    margin-bottom: 10px;
+}
+
+/* aniamciongayquemetraehartoynousegaylololololooaopdioqjad */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* responsivo cell */
+@media (max-width: 768px) {
+
+    .form-wrapper {
+        width: 100%;
+        padding: 0 12px;
+        gap: 5px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 22px 18px;
+        margin-top: 20px;
+        border-width: 3px;
+    }
+
+    .form-container h2 {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .form-container label {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: left;
+        overflow-wrap: break-word;
+    }
+
+    .form-container ul {
+        padding-left: 20px;
+    }
+
+    .form-container li {
+        margin-bottom: 15px;
+    }
+}
+
+/* cel2 */
+@media (max-width: 380px) {
+
+    .form-wrapper {
+        padding: 0 10px;
+    }
+
+    .form-container {
+        padding: 18px 14px;
+        margin-top: 15px;
+    }
+
+    .form-container h2 {
+        font-size: 1.15rem;
+    }
+
+    .form-container label {
+        font-size: 0.9rem;
+    }
+}

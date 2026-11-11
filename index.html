@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jóvenes Conscientes - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+    :root {
+        --bg-header: #002b66;
+        --bg-nav: #004d99;
+        --bg-main: #f4f4f9;
+        --text-white: #ffffff;
+        --shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--bg-main);
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* encabezado */
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: var(--bg-header);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        border-bottom: 2px solid #001a33;
+        width: 100%;
+    }
+
+    .site-title {
+        font-family: 'Georgia', serif;
+        font-size: 3rem;
+        color: var(--text-white);
+        font-style: italic;
+        font-weight: normal;
+    }
+
+    /* menu d navegacionn */
+    .navbar {
+        background-color: var(--bg-nav);
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        max-width: 900px;
+        margin: 0 auto;
+        list-style: none;
+    }
+
+    .nav-menu li a {
+        color: var(--text-white);
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 6px 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+        background-color: #003366;
+        text-decoration: underline;
+    }
+
+    .header-logo {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: contain;
+        display: block;
+        flex-shrink: 0;
+    }
+
+    /* pie */
+    .footer {
+        background-color: #001a33;
+        color: #fff;
+        text-align: center;
+        padding: 15px 40px;
+        margin-top: 40px;
+        font-size: 1.05rem;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 110px;
+    }
+
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        border-radius: 50%;
+        position: absolute;
+        right: 40px;
+    }
+
+    /* responsivo cels */
+    @media (max-width: 768px) {
+
+        .header {
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .site-title {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .header-logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .navbar {
+            padding: 10px;
+        }
+
+        .nav-menu {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .nav-menu li a {
+            font-size: 0.95rem;
+            padding: 7px 10px;
+        }
+
+        body > br {
+            display: none;
+        }
+
+        body > h1 {
+            font-size: 1.5rem;
+            margin: 25px 12px 0;
+        }
+
+        .footer {
+            flex-direction: column;
+            gap: 12px;
+            padding: 20px 15px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .footer p {
+            max-width: 100%;
+            overflow-wrap: break-word;
+        }
+
+        .footer-logo {
+            position: static;
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    /* cels2 */
+    @media (max-width: 380px) {
+
+        .site-title {
+            font-size: 1.7rem;
+        }
+
+        .nav-menu li a {
+            font-size: 0.85rem;
+            padding: 6px 8px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="site-title">JóvenesConscientes</h1>
+
+        <img src="logo.jpg" alt="Logo" class="header-logo">
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index/index.html" class="active">inicio</a></li>
+            <li><a href="informacion/informacion.html">Informacion</a></li>
+            <li><a href="participacion/participacion.html">Participacion</a></li>
+            <li><a href="contacto/contactanos.html">Contactanos</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+
+    <h1 style="text-align: center; color: #004d99;">
+        El Insomnio en Estudiantes
+    </h1>
+
+    <!-- fotos -->
+    <main class="main-container">
+        <section class="collage-grid">
+
+            <div class="collage-item item-tall">
+                <img src="img/foto1.jpg" alt="Imagen del proyecto 1">
+            </div>
+
+            <div class="collage-item">
+                <img src="img/foto2.jpg" alt="Imagen del proyecto 2">
+            </div>
+
+            <div class="collage-item">
+                <img src="img/foto3.jpg" alt="Imagen del proyecto 3">
+            </div>
+
+            <div class="collage-item">
+                <img src="img/foto4.jpg" alt="Imagen del proyecto 4">
+            </div>
+
+            <div class="collage-item item-wide">
+                <img src="img/foto5.jpg" alt="Imagen del proyecto 5">
+            </div>
+
+            <div class="collage-item">
+                <img src="img/foto6.jpg" alt="Imagen del proyecto 6">
+            </div>
+
+        </section>
+    </main>
+
+    <!-- pie -->
+    <footer class="footer">
+        <p>2026 Eduardo Arzola, Emiliano Garatuza, Alfredo Amarillas / PAEC</p>
+
+        <img src="logo2.jpg" alt="Logo PAEC" class="footer-logo">
+    </footer>
+
+</body>
+</html>
